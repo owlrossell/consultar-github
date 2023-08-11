@@ -56,10 +56,11 @@ header button {
 
 .user-image {
     width: 10%;
-    height: 80px;
+    height: 77px;
     background-color: white;
     justify-self: flex-start;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .user-image img {
@@ -83,7 +84,7 @@ header button {
 .user-nickname {
     margin-top: -1.5rem;
 }
-.user-nickname a:visited {
+.user-nickname a:visited, a:link{
     color: #185cd0;
 }
 
