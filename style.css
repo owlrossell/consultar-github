@@ -25,6 +25,11 @@ header {
     row-gap: .25rem;
     column-gap: 1.5rem;
 }
+@media (max-width: 480px) {
+    header {
+        max-width: 360px;
+    }
+}
 
 header h1 {
     font-size: 1rem;
@@ -54,6 +59,13 @@ header button {
     gap: 2rem;
 }
 
+@media (max-width: 480px) {
+    .container {
+        max-width: 360px;
+        flex-direction: column;
+    }
+}
+
 .user-image {
     width: 10%;
     height: 77px;
@@ -61,6 +73,14 @@ header button {
     justify-self: flex-start;
     border-radius: 50%;
     overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .user-image {
+        width: 80px;
+        height: 80px;
+        align-self: center;
+    }
 }
 
 .user-image img {
@@ -76,6 +96,11 @@ header button {
     gap: 2rem;
 }
 
+@media (max-width: 480px) {
+    .user-description {
+        width: 100%;
+    }
+}
 .user-name {
     display: flex;
     justify-content: space-between;
@@ -95,6 +120,16 @@ header button {
     gap: 10rem;
 }
 
+@media (max-width: 480px) {
+    .user-stats {
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 .user-stats > div {
     display: flex;
     flex-direction: column;
@@ -110,4 +145,14 @@ header button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+}
+
+.user-social > div > span {
+    margin-left: .75rem;
+}
+
+@media (max-width: 480px) {
+    .user-social {
+        grid-template-columns: 1fr;
+    }
 }
